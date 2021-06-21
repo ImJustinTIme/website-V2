@@ -26,6 +26,10 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  display:none;
+}
+
 html,
 body {
   background:  var(--background-color);
@@ -36,10 +40,6 @@ html, body, li {
   padding: 0;
 }
 
-/* .pullDown {
-  margin-top: 76px;
-} */
-
 :root {
   --bubble-color: #6d597a;
   --bubble-text-color: #eaac8b;
@@ -48,7 +48,10 @@ html, body, li {
   --button-text-color: #212d40;
   --background-color: #364156;
   --background-text-color: #11151c;
+  --medium-screen-size: 740px;
+  --x-small-screen-size: 325px;
 }
+
 
 a {
   color: inherit;

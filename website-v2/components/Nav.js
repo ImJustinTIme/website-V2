@@ -1,12 +1,11 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import navStyles from '../styles/Nav.module.css'
-import React, {useEffect} from 'react';
+import React, { useEffect} from 'react';
 
 const Nav = () => {
 
     const [scroll, setScroll] = React.useState(true);
-    
+    const [iconSize, setIconSize] = React.useState(50);
     useEffect(() => {
         document.addEventListener("scroll", () => {
           const scrollCheck = window.scrollY < 100
@@ -14,18 +13,27 @@ const Nav = () => {
             setScroll(scrollCheck)
           }
         })
-      })
+    })
+
+    useEffect(() => {
+          window.addEventListener("resize", () => {
+            console.log(window.innerWidth);
+            setIconSize(window.innerWidth >= 768 ? 50 : 40);
+          })
+
+          setIconSize(window.innerWidth >= 768 ? 50 : 40);
+    })
 
     return (
         <div className={`${navStyles.navBorder} ${scroll ? '' : navStyles.top}`}>
             <div className={navStyles.nav}>
                 <div className={navStyles.navParent}>
                     <div className={navStyles.imageParent}>
-                    <Image
+                    <img
                         className={navStyles.navImage}
                         src='/images/Strange.png'
-                        width='50'
-                        height='50' />
+                        width={iconSize}
+                        height={iconSize} />
                     </div>
                 <h1 className={navStyles.title}>Justin Kuennen</h1>
                 </div>

@@ -5,7 +5,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 export default function Home() {
   
   return (
-    <div className={'pullDown'}>
+    <div>
         <Greeting />
         <Experience />
     </div>
