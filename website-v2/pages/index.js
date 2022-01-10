@@ -1,6 +1,6 @@
 import Greeting from "../components/Greetings";
 import Experience from "../components/Experience";
-import { useEffect, useRef, useState, useCallback } from "react";
+import WorkExperince from "../components/WorkExperience";
 
 export default function Home() {
   
@@ -8,6 +8,7 @@ export default function Home() {
     <div>
         <Greeting />
         <Experience />
+        <WorkExperince/>
     </div>
   )
 }
