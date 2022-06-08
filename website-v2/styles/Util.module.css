@@ -1,0 +1,144 @@
+.icon {
+    width: 48px;
+    height: 48px;
+    margin-left: -4px;
+    margin-right: 5px;
+    color: var(--bubble-text-color)
+}
+
+.headerParent {
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.headerMessage {
+    vertical-align: middle;
+    font-size: 30px;
+    padding: 3px;
+}
+
+.timeline {
+    padding: 20px 0px 20px 0px;
+    overflow: auto;
+    display: flex;
+    display: center;
+    max-width: calc(100vw - 40px);
+}
+
+.timelineCards {
+    display: flex;
+    flex-direction: row;
+    cursor: grab;
+    overflow-x: auto;
+    padding-left: 3px;
+    border-radius: 16px;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 16px;
+    width: 100%;
+}
+
+.card {
+    background: var(--bubble-color);
+    border-radius: 16px;
+    height: 200px;
+    padding: 20px;
+    width: 100%;
+}
+
+.card:not(:last-child) {
+    margin: 0 20px 0 0;
+}
+
+.timelineCard {
+    background: var(--bubble-color);
+    border-radius: 16px;
+    max-width: 500px;
+    min-width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.arrowButton {
+    margin-top: 82px;
+}
+
+.arrowIcon {
+    width: 24px;
+    height: 36px;
+    margin: 0 3px
+}
+
+.timelineIcon {
+    width: 20px;
+    height: 20px;
+    margin-left: -2px;
+}
+
+.experienceCard {
+    padding: 20px;
+    display: flex;
+    display: center;
+}
+
+.lineGroup {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dot{
+    width: 14px;
+    height: 14px;
+    background: #D1D6E6;
+    border-radius: 7px;
+    margin: 6px 0 6px 0
+    
+  }
+  
+.line {
+    height: 2px;
+    width: 100%; 
+    background: #D1D6E6;
+    margin: 12px 0 12px 0
+    
+  }
+
+.first {
+    width: 48%;
+}
+
+.black {
+    background: var(--background-text-color);
+    width: 48%;
+  }
+
+
+
+@media (max-width: 768px) {
+    .headerMessage {
+        font-size: 25px;
+        padding: 3px
+    }
+
+    .cards {
+        flex-direction: column;
+        
+    }
+
+    .card:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+}

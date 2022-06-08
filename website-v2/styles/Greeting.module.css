@@ -1,0 +1,55 @@
+.greetParent {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+
+.imageParent {
+   width: 50%;
+   padding: 20px;
+   background: var(--background-text-color);
+   border-radius: 16px;
+}
+
+.greetImage {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+}
+
+
+.greetText {
+    width: 50%;
+    color: var(--bubble-text-color);
+    font-weight: 600;
+    font-size: 22px;
+    padding: 20px 0;
+    font-feature-settings: 'bold';
+}
+
+.backgroundText {
+    margin-top: 5px;
+}
+
+
+@media (max-width: 740px) {
+    .greetParent {
+        flex-direction: column-reverse;
+    }
+
+    .imageParent {
+        width: auto;
+        align-self: center;
+    }
+
+
+    .greetText {
+        width: auto;
+        min-height: 15vh;
+        font-size: 20px;
+        
+    }
+}

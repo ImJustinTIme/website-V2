@@ -1,0 +1,11 @@
+.experienceParent {
+    background: var(--background-text-color);
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 740px) {
+    
+}
