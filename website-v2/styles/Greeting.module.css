@@ -1,15 +1,17 @@
 .greetParent {
     display: flex;
     justify-content: center; 
+    align-items: center;
+    padding: 20px 20px 30px 20px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 
 .imageParent {
    width: 50%;
    padding: 20px;
-   background: var(--background-text-color);
+   background: var(--button-color);
    border-radius: 16px;
 }
 
@@ -24,7 +26,6 @@
 .greetText {
     width: 50%;
     color: var(--bubble-text-color);
-    font-weight: 600;
     font-size: 22px;
     padding: 20px 0;
     font-feature-settings: 'bold';

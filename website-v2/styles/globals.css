@@ -41,12 +41,14 @@ html, body, li {
 }
 
 :root {
-  --bubble-color: #6d597a;
-  --bubble-text-color: #eaac8b;
-  --button-group-color: #7d4e57;
-  --button-color: #d66853 ;
+  --bubble-color: #55bcc9;
+  --bubble-color-light: #f3d5d5;
+  --bubble-text-color: #11151c;
+  --button-group-color: #d23131;
+  --background-image-color: #97caef;
+  --button-color: #FC4445 ;
   --button-text-color: #212d40;
-  --background-color: #364156;
+  --background-color: #CAFAFE;
   --background-text-color: #11151c;
   --medium-screen-size: 740px;
   --x-small-screen-size: 325px;

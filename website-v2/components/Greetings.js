@@ -7,8 +7,8 @@ const Greeting = () => {
         <div className={styles.greetParent} >
             
             <div className={styles.greetText}>
-                <CardHeader iconName={'icons8-code-48.png'} headerText={'Welcome to the Site!'}/>               
-                <div className={styles.backgroundText}>{'I am a Computer Engineer with a background in Software.'}</div>
+                <CardHeader headerText={'Welcome to the Site!'}/>               
+                <div className={styles.backgroundText}>{'I am a Full Stack Dev currently working for QCI'}</div>
             </div>
             <div className={styles.imageParent}>
             <img

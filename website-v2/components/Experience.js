@@ -1,31 +1,28 @@
-import styles from '../styles/Experience.module.css';
-import Timeline from './util/timeline';
+import styles from "../styles/Experience.module.css";
+import CardHeader from "./util/CardHeader";
 
-const Experience = () => { 
-    const timelineData = [
-        {
-            iconName: 'icons8-book-48.png',
-            headerText: 'Fall 2016 - Started College',
-            bodyText: 'Started at Iowa State University with a degree in Computer Engineering'
-        },
-        {
-            iconName: 'icons8-book-48.png',
-            headerText: 'Fall 2017 - Started College',
-            bodyText: 'Started at Iowa State University with a degree in Computer Engineering'
-        },
-        {
-            iconName: 'icons8-book-48.png',
-            headerText: 'Fall 2018 - Started College',
-            bodyText: 'Started at Iowa State University with a degree in Computer Engineering'
-        }
-    ];
+const Experience = () => {
 
-    return (
-        <div className={styles.experienceParent}>
-            <Timeline timelineData={timelineData} />
+  return (
+    <div className={styles.experienceParent}>
+      <div className={styles.imageParent}>
+            <img
+                className={styles.greetImage}
+                src='/images/coffee.jpg'
+                />
+            </div>
+      <div className={styles.schoolTextGroup}>
+        <CardHeader headerText={"School"} />
+
+        <div>
+          <div>
+            Graduated From Iowa State in 2020 With a degree in Computer
+            Engineering
+          </div>
         </div>
-    
-    );
-}
+      </div>
+    </div>
+  );
+};
 
-export default Experience
+export default Experience;

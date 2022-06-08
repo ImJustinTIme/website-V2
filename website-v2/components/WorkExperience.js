@@ -46,7 +46,7 @@ const WorkExperince = () => {
 
     return (
         <div className={styles.experienceParent}>
-            <ExperienceCard data={data} />
+            {/* <ExperienceCard data={data} /> */}
         </div>
     
     );
