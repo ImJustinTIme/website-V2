@@ -1,6 +1,6 @@
 
 import React from 'react';
-import styles from '../../styles/Util.module.css';
+
 
 const ExperienceCard = ({ data }) => {
 
@@ -8,13 +8,13 @@ const ExperienceCard = ({ data }) => {
     const cards = data?.map(card => {
 
         return (
-                <div className={styles.card}>
-                    <div className={styles.headerParent}>
+                <div className={'card'}>
+                    <div className={'headerParent'}>
                         <img
-                            className={styles.timelineIcon}
-                            src={`/images/icons/${card.iconName}`}
+                            className={'timelineIcon'}
+                            src={`/images/icons/${'iconName'}`}
                         />
-                        <div className={styles.cardHeaderText}>{card.headerText} </div>
+                        <div className={'cardHeaderText'}>{card.headerText} </div>
                     </div>
                     <ul>
                     {
@@ -30,8 +30,8 @@ const ExperienceCard = ({ data }) => {
         )
     });
 
-    return (<div className={styles.experienceCard}>
-        <div className={styles.cards} id={'cards'}>
+    return (<div className={'experienceCard'}>
+        <div className={'cards'} id={'cards'}>
             {
                 cards
             }

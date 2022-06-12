@@ -1,4 +1,4 @@
-import styles from '../styles/Experience.module.css';
+
 import ExperienceCard from './util/ExperienceCard';
 
 const WorkExperince = () => { 
@@ -45,7 +45,7 @@ const WorkExperince = () => {
     ];
 
     return (
-        <div className={styles.experienceParent}>
+        <div className={'experienceParent'}>
             {/* <ExperienceCard data={data} /> */}
         </div>
     

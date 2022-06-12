@@ -1,4 +1,3 @@
-import styles from '../../styles/Util.module.css'
 
 const CardHeader = (props) => {
 
@@ -8,12 +7,12 @@ const CardHeader = (props) => {
     } = props
 
     return (
-        <div className={styles.headerParent}>
+        <div className={'headerParent'}>
             {iconName && <img
-                className={styles.icon}
+                className={'icon'}
                 src={`/images/icons/${iconName}`}
             />}
-            <div className={styles.headerMessage} >{headerText}</div>
+            <div className={'headerMessage'} >{headerText}</div>
         </div>
     )
 }

@@ -1,18 +1,17 @@
-import styles from '../styles/Greeting.module.css'
 import CardHeader from './util/CardHeader';
-import React, {useEffect} from 'react';
+import React from 'react';
 const Greeting = () => { 
 
     return (
-        <div className={styles.greetParent} >
+        <div className={'greetParent'} >
             
-            <div className={styles.greetText}>
+            <div className={'greetText'}>
                 <CardHeader headerText={'Welcome to the Site!'}/>               
-                <div className={styles.backgroundText}>{'I am a Full Stack Dev currently working for QCI'}</div>
+                <div className={'backgroundText'}>{'I am a Full Stack Dev currently working for QCI'}</div>
             </div>
-            <div className={styles.imageParent}>
+            <div className={'imageParent'}>
             <img
-                className={styles.greetImage}
+                className={'greetImage'}
                 src='/images/coffee.jpg'
                 />
             </div>
